@@ -32,24 +32,43 @@
                         </ul>
                     </td>
                     <td valign="top">
-                        <label>Tristan Phan's Profile</label>
-                        </br></br>
-                        <hr>
-                        </br>
-                        <div style="float: right">
-                            <a href="/Kanbas/Account/Profile/Edit/screen.html">
-                                <button type="button"><img src="pencilicon.png" width="10">Edit Profile</button>
-                            </a>
-                        </div>
                         <h2>Tristan Phan</h2>
+                        <label for="name">Name:*</label>
+                        <input id="name" type="text" value="Tristan Phan">
+                        <label for="pronouns">Pronouns:</label>
+                        <select id="pronouns">
+                            <option value="NONE">None</option>
+                        </select></br></br>
+                        <label for="title">Title:</label>
+                        <input id="title" type="text">
+
                         <h3>Contact</h3>
                         <p>No registered services, you can add some in the <a href=#>settings</a> page.</p>
 
                         <h3>Biography</h3>
-                        <p>Student, HCI Engineer, Data Scientist, Design, Art, and pink enthusiast.</p>
+                        <textarea rows="3" cols="50">Student, HCI Engineer, Data Scientist, Design, Art, and pink enthusiast.</textarea>
 
                         <h3>Links</h3>
-                        <a href="https://www.linkedin.com/in/tristan-phan/">LinkedIn</a>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/tristan-phan/">LinkedIn 🔗 Links to an external site.</a></li> 
+                        </ul>
+                        <table>
+                            <tr>
+                                <th style="width:45%" align="center">Title</th>
+                                <th style="width:10%" align="center"></th>
+                                <th style="width:45%" align="center">URL</th>
+                            </tr>
+                            <tr>
+                                <td align="center"><input type="text" value="LinkedIn"></th>
+                                <td align="center">→</th>
+                                <td align="center"><input type="text" value="https://www.linkedin.com/in/tristan-phan/"></th>
+                            </tr>
+                        </table>
+                        <button type="button">Add another link</button></br>
+                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel</button></a>
+                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Save Profile</button></a></br>
+                        <button type="button">Edit Profile</button>
+                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel Editing</button></a>
                     </td>
                 </tr>
             </tbody>
