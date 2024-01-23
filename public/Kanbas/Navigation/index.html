@@ -1,8 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
+<script>
+    function CourseNavigation() {
+        const links = [
+            {
+                name: "Account",
+                url: "/Kanbas/Account/Profile/screen.html"
+            },
+            {
+                name: "Dashboard",
+                url: "/Kanbas/Dashboard/screen.html"
+            },
+            {
+                name: "Courses",
+                url: "/Kanbas/Courses/Home/screen.html"
+            },
+            {
+                name: "Calendar",
+                url: "/Kanbas/Calendar/index.html"
+            },
+            {
+                name: "Inbox",
+                url: "/Kanbas/Inbox/index.html"
+            }
+        ]
+    }
 
-    <body>
+    document.write(`
         <ul>
             <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
             <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
@@ -13,7 +36,6 @@
             <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
             <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
             <li><a href="/Kanbas/Help/index.html">Help</a></li>
-        </ul>  
-    </body>
-</html>
-   
+        </ul>  `
+    )
+</script>
