@@ -1,0 +1,26 @@
+.hamburger-menu-list-item {
+    list-style: none;
+    width: 100%;
+}
+
+.hamburger-menu-list-item * {
+    text-decoration: none;
+    text-align: left;
+    color: red;
+}
+
+.hamburger-menu-list-item > a > i {
+    font-size: 15px;
+    width: 30px;
+    color: red;
+}
+
+.hamburger-account-icon {
+    color: gray !important;
+}
+
+.menu-box {
+    border-width: 2px;
+    border-color: gray;
+    border: gray;
+}

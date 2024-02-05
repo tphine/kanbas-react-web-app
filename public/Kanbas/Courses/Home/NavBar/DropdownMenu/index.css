@@ -1,0 +1,22 @@
+.wd-drop-down {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.wd-drop-down li {
+    padding-left: 10px;
+}
+
+.wd-drop-down a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-drop-down > li > a > i {
+    width: 20px;
+}

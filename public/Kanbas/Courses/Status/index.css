@@ -1,0 +1,48 @@
+.status-list > li > button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: gray;
+    color: #424242;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 2px;
+    width: 230px;
+    text-align: left;
+}
+
+.publish-buttons {
+    width: 230px;
+}
+
+.publish-buttons > button {
+    width: 115px;
+    border-color: gray;
+    color: #424242;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px;
+}
+
+.green-status-btn {
+    border-color: green;
+    background-color: green;
+    color: white !important;
+}
+
+a {
+    color:#424242;
+    text-decoration: none;
+}
+
+.red-link {
+    color: red;
+    font-size: 12px;
+    vertical-align: 10%;
+}
+
+li > a > span {
+    font-size: 12px;
+    color:#424242;
+}
