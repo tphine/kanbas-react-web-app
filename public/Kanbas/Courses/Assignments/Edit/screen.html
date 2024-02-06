@@ -2,30 +2,87 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/ff6b7f2ebc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-1 d-none d-md-block">
+    <div class="d-flex">
+        <div class="wd-nav-background d-none d-md-block">
             <ul class="wd-kanbas-navigation">
-                <li><a href="http://northeastern.edu">N</a></li>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li class="wd-active">
-                    <a href="/Kanbas/Dashboard/screen.html">
-                        <i class="fa fa-tachometer"></i> Dashboard</a>
+                <li class="mb-1">
+                    <a href="http://northeastern.edu">
+                        <img class="logo"
+                            src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png">
+                    </a>
                 </li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a> </li>
-                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x account"></i>
+                            <i class="fa-solid fa-user fa-stack-1x account"
+                                style="font-size: 120%; margin-top: 2px"></i>
+                        </span>
+                        <div>Account</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li class="wd-active mb-1">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i>
+                        <div>Courses</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        </br>Calendar</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-inbox"></i>
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>History</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <div>Studio</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-arrow-right fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Commons</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-question fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Help</div>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="col-md-2 d-none d-md-block">
@@ -33,12 +90,12 @@
                 <li>
                     <a href="/Kanbas/Courses/Home/screen.html">Home</a>
                 </li>
-                <li class="wd-active">
+                <li>
                     <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
                 </li>
                 <li><a href="http://piazza.com">Piazza</a></li>
                 <li><a href="#">Zoom</a></li>
-                <li>
+                <li class="wd-active">
                     <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
                 </li>
                 <li><a href="#">Quizzes</a></li>
@@ -105,108 +162,7 @@
             <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
             <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>
         </div>
-
-        <table>
-            <tbody>
-                <tr>
-                    <td valign="top">
-                        <ul class="wd-kanbas-navigation">
-                            <li><a href="http://northeastern.edu">N</a></li>
-                            <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                            <li class="wd-active">
-                                <a href="/Kanbas/Dashboard/screen.html">
-                                    <i class="fa fa-tachometer"></i> Dashboard</a>
-                            </li>
-                            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a> </li>
-                            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <td valign="top">
-                        <ul class="wd-navigation">
-                            <li>
-                                <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                            </li>
-                            <li class="wd-active">
-                                <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                            </li>
-                            <li><a href="http://piazza.com">Piazza</a></li>
-                            <li><a href="#">Zoom</a></li>
-                            <li>
-                                <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                            </li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                            <li><a href="#">People</a></li>
-                        </ul>
-                    </td>
-                    <td valign="top">
-                        <select>
-                            <option value="SPEEDGRADER">SpeedGrader</option>
-                        </select>
-                        <hr>
-                        <h2>Assignment Name</h2>
-                        <input type="text" placeholder="Assignment Name" value="A1 - ENV + HTML"></br></br>
-
-                        <textarea>This is a description of an assignment.</textarea></br></br>
-
-                        <label for="points-input">Points</label></br>
-                        <input type="text" id="points-input"></br></br>
-
-                        <label for="assign-group">Assignment Group</label></br>
-                        <select id="assign-group">
-                            <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-                        </select></br></br>
-
-                        <label for="display-grade">Display Grade as</label></br>
-                        <select id="display-grade">
-                            <option value="PERCENTAGE">Percentage</option>
-                        </select></br></br>
-
-                        <label for="submission-type">Submission Type</label></br>
-                        <select id="submission-type">
-                            <option value="ONLINE">Online</option>
-                        </select></br></br>
-
-                        <label>Online Entry Options</label></br>
-                        <input type="checkbox" id="text-entry">
-                        <label for="text-entry">Text Entry</label>
-                        </br>
-                        <input type="checkbox" id="website-url">
-                        <label for="website-url">Website URL</label>
-                        </br>
-                        <input type="checkbox" id="media-recordings">
-                        <label for="media-recordings">Media Recordings</label>
-                        </br>
-                        <input type="checkbox" id="student-annotation">
-                        <label for="student-annotation">Student Annotation</label>
-                        </br>
-                        <input type="checkbox" id="file-uploads">
-                        <label for="file-uploads">File Uploads</label>
-                        </br></br>
-
-                        <label for="assign-to">Assign to</label></br>
-                        <input id="assign-to" type="text" placeholder="Assign to..." value="Everyone"></br></br>
-
-                        <label for="due">Due</label></br>
-                        <input id="due" type="date"></br></br>
-
-                        <label for="available">Available from</label></br>
-                        <input id="available" type="date"></br></br>
-
-                        <label for="until">Until</label></br>
-                        <input id="until" type="date"></br></br>
-
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    </div>
 </body>
 
 </html>

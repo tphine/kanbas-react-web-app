@@ -5,66 +5,144 @@
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.js" />
+    <link rel="stylesheet" href="../../Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="../../Courses/Home/NavBar/index.css" />
+    <script src="https://kit.fontawesome.com/ff6b7f2ebc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <table cellpadding="15">
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul class="wd-kanbas-navigation">
-                        <li><a href="http://northeastern.edu">N</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li class="wd-active">
-                            <a href="/Kanbas/Dashboard/screen.html">
-                                <i class="fa fa-tachometer"></i> Dashboard</a>
-                        </li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a> </li>
-                        <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href=#>Notifications</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html" />Profile</a></li>
-                        <li><a href=#>Files</a></li>
-                        <li><a href=#>Settings</a></li>
-                        <li><a href=#>ePortfolios</a></li>
-                        <li><a href=#>Shared Content</a></li>
-                        <li><a href=#>The Hub</a></li>
-                        <li><a href=#>Qwickly Course Tools</a></li>
-                        <li><a href=#>Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <label>Tristan Phan's Profile</label>
-                    </br></br>
-                    <hr>
-                    </br>
-                    <div style="float: right">
-                        <a href="/Kanbas/Account/Profile/Edit/screen.html">
-                            <button type="button"><img src="pencilicon.png" width="10">Edit Profile</button>
-                        </a>
-                    </div>
-                    <h2>Tristan Phan</h2>
-                    <h3>Contact</h3>
-                    <p>No registered services, you can add some in the <a href=#>settings</a> page.</p>
+    <div class="d-md-none">
+        <nav class="d-flex wd-navbar navbar">
+            <div>
+                <a href="/Kanbas/Account/Profile/NavBar/HamburgerMenu/index.html">
+                    <i class="navbar-icon fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="col">
+                <p>
+                    Tristan Phan's Profile
+                </p>
+            </div>
+            <div class="float-end">
+                <a href="/Kanbas/Account/Profile/NavBar/DropdownMenu/index.html">
+                    <i class="navbar-icon fa-solid fa-caret-down"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
 
-                    <h3>Biography</h3>
-                    <p>Student, HCI Engineer, Data Scientist, Design, Art, and pink enthusiast.</p>
+    <div class="d-flex">
+        <div class="wd-nav-background d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <li class="mb-1">
+                    <a href="http://northeastern.edu">
+                        <img class="logo"
+                            src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png">
+                    </a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x account"></i>
+                            <i class="fa-solid fa-user fa-stack-1x account"
+                                style="font-size: 120%; margin-top: 2px"></i>
+                        </span>
+                        <div>Account</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i>
+                        <div>Courses</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        </br>Calendar</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-inbox"></i>
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>History</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <div>Studio</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-arrow-right fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Commons</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-question fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Help</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-                    <h3>Links</h3>
-                    <a href="https://www.linkedin.com/in/tristan-phan/">LinkedIn</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="d-none d-md-block">
+            <ul class="wd-navigation">
+                <li><a href=#>Notifications</a></li>
+                <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html" />Profile</a></li>
+                <li><a href=#>Files</a></li>
+                <li><a href=#>Settings</a></li>
+                <li><a href=#>ePortfolios</a></li>
+                <li><a href=#>Shared Content</a></li>
+                <li><a href=#>The Hub</a></li>
+                <li><a href=#>Qwickly Course Tools</a></li>
+                <li><a href=#>Global Announcements</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-grow-1 p-4 ms-4">
+            <label>Tristan Phan's Profile</label>
+            </br></br>
+            <hr>
+            </br>
+            <div style="float: right">
+                <a href="/Kanbas/Account/Profile/Edit/screen.html">
+                    <button type="button"><img src="pencilicon.png" width="10">Edit Profile</button>
+                </a>
+            </div>
+            <h2>Tristan Phan</h2>
+            <h3>Contact</h3>
+            <p>No registered services, you can add some in the <a href=#>settings</a> page.</p>
+
+            <h3>Biography</h3>
+            <p>Student, HCI Engineer, Data Scientist, Design, Art, and pink enthusiast.</p>
+
+            <h3>Links</h3>
+            <a href="https://www.linkedin.com/in/tristan-phan/">LinkedIn</a>
+        </div>
+    </div>
 </body>
 
 </html>

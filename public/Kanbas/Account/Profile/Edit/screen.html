@@ -1,6 +1,178 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+
+<head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.js" />
+    <link rel="stylesheet" href="../../../Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="../../../Courses/Home/NavBar/index.css" />
+    <script src="https://kit.fontawesome.com/ff6b7f2ebc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-md-none">
+        <nav class="d-flex wd-navbar navbar">
+            <div>
+                <a href="/Kanbas/Account/Profile/NavBar/HamburgerMenu/index.html">
+                    <i class="navbar-icon fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="col">
+                <p>
+                    Tristan Phan's Profile
+                </p>
+            </div>
+            <div class="float-end">
+                <a href="/Kanbas/Account/Profile/NavBar/DropdownMenu/index.html">
+                    <i class="navbar-icon fa-solid fa-caret-down"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-flex">
+        <div class="wd-nav-background d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <li class="mb-1">
+                    <a href="http://northeastern.edu">
+                        <img class="logo"
+                            src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png">
+                    </a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x account"></i>
+                            <i class="fa-solid fa-user fa-stack-1x account"
+                                style="font-size: 120%; margin-top: 2px"></i>
+                        </span>
+                        <div>Account</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i>
+                        <div>Courses</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        </br>Calendar</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-inbox"></i>
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>History</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <div>Studio</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-arrow-right fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Commons</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-question fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Help</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-none d-md-block">
+            <ul class="wd-navigation">
+                <li><a href=#>Notifications</a></li>
+                <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html" />Profile</a></li>
+                <li><a href=#>Files</a></li>
+                <li><a href=#>Settings</a></li>
+                <li><a href=#>ePortfolios</a></li>
+                <li><a href=#>Shared Content</a></li>
+                <li><a href=#>The Hub</a></li>
+                <li><a href=#>Qwickly Course Tools</a></li>
+                <li><a href=#>Global Announcements</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-grow-1 p-4 ms-4">
+            <h2>Tristan Phan</h2>
+                        <label for="name">Name:*</label>
+                        <input id="name" type="text" value="Tristan Phan">
+                        <label for="pronouns">Pronouns:</label>
+                        <select id="pronouns">
+                            <option value="NONE">None</option>
+                        </select></br></br>
+                        <label for="title">Title:</label>
+                        <input id="title" type="text">
+
+                        <h3>Contact</h3>
+                        <p>No registered services, you can add some in the <a href=#>settings</a> page.</p>
+
+                        <h3>Biography</h3>
+                        <textarea rows="3" cols="50">Student, HCI Engineer, Data Scientist, Design, Art, and pink enthusiast.</textarea>
+
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/tristan-phan/">LinkedIn 🔗 Links to an external site.</a></li> 
+                        </ul>
+                        <table>
+                            <tr>
+                                <th style="width:45%" align="center">Title</th>
+                                <th style="width:10%" align="center"></th>
+                                <th style="width:45%" align="center">URL</th>
+                            </tr>
+                            <tr>
+                                <td align="center"><input type="text" value="LinkedIn"></th>
+                                <td align="center">→</th>
+                                <td align="center"><input type="text" value="https://www.linkedin.com/in/tristan-phan/"></th>
+                            </tr>
+                        </table>
+                        <button type="button">Add another link</button></br>
+                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel</button></a>
+                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Save Profile</button></a></br>
+                        <button type="button">Edit Profile</button>
+                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel Editing</button></a>
+        </div>
+    </div>
+</body>
+
+<!--
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    </head>
     <body>
         <table cellpadding="15">
             <tbody>
@@ -75,3 +247,4 @@
         </table>
     </body>
 </html>
+-->

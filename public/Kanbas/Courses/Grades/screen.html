@@ -2,128 +2,181 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <script src="https://kit.fontawesome.com/ff6b7f2ebc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <table>
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul class="wd-kanbas-navigation">
-                        <li><a href="http://northeastern.edu">N</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li class="wd-active">
-                            <a href="/Kanbas/Dashboard/screen.html">
-                                <i class="fa fa-tachometer"></i> Dashboard</a>
-                        </li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a> </li>
-                        <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul class="wd-navigation">
-                        <li>
-                            <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                        </li>
-                        <li class="wd-active">
-                            <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                        </li>
-                        <li><a href="http://piazza.com">Piazza</a></li>
-                        <li><a href="#">Zoom</a></li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                        </li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <select>
-                        <option value="GRADEBOOK">Gradebook</option>
-                    </select>
-                    <button type="button">Import</button>
-                    <select>
-                        <option value="EXPORT">Export</option>
-                    </select>
-                    <button type="button">Configure</button>
-
-                    <h3>Student Names</h3>
-                    <input id="student-names" placeholder="Search Students" /><br />
-
-                    <h3>Assignment Names</h3>
-                    <input id="assignment-names" placeholder="Search Assignments" /><br />
-                    <br />
-                    <button type="button">Apply Filters</button>
-                    <br />
-                    <br />
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>A1 SETUP Out of 100</th>
-                                <th>A2 HTML Out of 100</th>
-                                <th>A3 CSS Out of 100</th>
-                                <th>A4 BOOTSTRAP Out of 100</th>
-                                <th>A5 JAVASCRIPT Out of 100</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td valign="center" align="center">Seraphine</td>
-                                <td valign="center" align="center">100</td>
-                                <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
-                                <td valign="center" align="center">100</td>
-                                <td valign="center" align="center">100</td>
-                                <td valign="center" align="center">100</td>
-                            </tr>
-                            <tr>
-                                <td valign="center" align="center">Angelic Buster</td>
-                                <td valign="center" align="center">70</td>
-                                <td valign="center" align="center">55</td>
-                                <td valign="center" align="center">65</td>
-                                <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
-                                <td valign="center" align="center">75</td>
-                            </tr>
-                            <tr>
-                                <td valign="center" align="center">Jigglypuff</td>
-                                <td valign="center" align="center">20</td>
-                                <td valign="center" align="center">5</td>
-                                <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
-                                <td valign="center" align="center">0</td>
-                                <td valign="center" align="center">10</td>
-                            </tr>
-                            <tr>
-                                <td valign="center" align="center">Robin</td>
-                                <td valign="center" align="center">95</td>
-                                <td valign="center" align="center">95</td>
-                                <td valign="center" align="center">97</td>
-                                <td valign="center" align="center">98</td>
-                                <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
-                            </tr>
-                            <tr>
-                                <td valign="center" align="center">Sangonomiya Kokomi</td>
-                                <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
-                                <td valign="center" align="center">99</td>
-                                <td valign="center" align="center">99</td>
-                                <td valign="center" align="center">97</td>
-                                <td valign="center" align="center">100</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="d-flex">
+        <div class="wd-nav-background d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <li class="mb-1">
+                    <a href="http://northeastern.edu">
+                        <img class="logo"
+                            src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x account"></i>
+                            <i class="fa-solid fa-user fa-stack-1x account"
+                                style="font-size: 120%; margin-top: 2px"></i>
+                        </span>
+                        <div>Account</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li class="wd-active mb-1">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i>
+                        <div>Courses</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        </br>Calendar</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-inbox"></i>
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>History</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <div>Studio</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-arrow-right fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Commons</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-question fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Help</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 d-none d-md-block">
+            <ul class="wd-navigation">
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                </li>
+                <li>
+                    <a href=#>Modules</a>
+                </li>
+                <li><a href="http://piazza.com">Piazza</a></li>
+                <li><a href="#">Zoom</a></li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li><a href="#">Quizzes</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+        </div>
+        <div class="col">
+            <select>
+                <option value="GRADEBOOK">Gradebook</option>
+            </select>
+            <button type="button">Import</button>
+            <select>
+                <option value="EXPORT">Export</option>
+            </select>
+            <button type="button">Configure</button>
+        
+            <h3>Student Names</h3>
+            <input id="student-names" placeholder="Search Students" /><br />
+        
+            <h3>Assignment Names</h3>
+            <input id="assignment-names" placeholder="Search Assignments" /><br />
+            <br />
+            <button type="button">Apply Filters</button>
+            <br />
+            <br />
+            <table class="table-bordered" width="100%" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>A1 SETUP Out of 100</th>
+                        <th>A2 HTML Out of 100</th>
+                        <th>A3 CSS Out of 100</th>
+                        <th>A4 BOOTSTRAP Out of 100</th>
+                        <th>A5 JAVASCRIPT Out of 100</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td valign="center" align="center">Seraphine</td>
+                        <td valign="center" align="center">100</td>
+                        <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
+                        <td valign="center" align="center">100</td>
+                        <td valign="center" align="center">100</td>
+                        <td valign="center" align="center">100</td>
+                    </tr>
+                    <tr>
+                        <td valign="center" align="center">Angelic Buster</td>
+                        <td valign="center" align="center">70</td>
+                        <td valign="center" align="center">55</td>
+                        <td valign="center" align="center">65</td>
+                        <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
+                        <td valign="center" align="center">75</td>
+                    </tr>
+                    <tr>
+                        <td valign="center" align="center">Jigglypuff</td>
+                        <td valign="center" align="center">20</td>
+                        <td valign="center" align="center">5</td>
+                        <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
+                        <td valign="center" align="center">0</td>
+                        <td valign="center" align="center">10</td>
+                    </tr>
+                    <tr>
+                        <td valign="center" align="center">Robin</td>
+                        <td valign="center" align="center">95</td>
+                        <td valign="center" align="center">95</td>
+                        <td valign="center" align="center">97</td>
+                        <td valign="center" align="center">98</td>
+                        <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="center" align="center">Sangonomiya Kokomi</td>
+                        <td valign="center" align="center"><input type="number" min="0" max="100" /></td>
+                        <td valign="center" align="center">99</td>
+                        <td valign="center" align="center">99</td>
+                        <td valign="center" align="center">97</td>
+                        <td valign="center" align="center">100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>

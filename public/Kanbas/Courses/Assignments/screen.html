@@ -2,30 +2,86 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <script src="https://kit.fontawesome.com/ff6b7f2ebc.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="row">
-        <div class="col-md-1 d-none d-md-block">
+    <div class="d-flex">
+        <div class="wd-nav-background d-none d-md-block">
             <ul class="wd-kanbas-navigation">
-                <li><a href="http://northeastern.edu">N</a></li>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li class="wd-active">
-                    <a href="/Kanbas/Dashboard/screen.html">
-                        <i class="fa fa-tachometer"></i> Dashboard</a>
+                <li class="mb-1">
+                    <a href="http://northeastern.edu">
+                        <img class="logo"
+                            src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png">
+                    </a>
                 </li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a> </li>
-                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x account"></i>
+                            <i class="fa-solid fa-user fa-stack-1x account"
+                                style="font-size: 120%; margin-top: 2px"></i>
+                        </span>
+                        <div>Account</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li class="wd-active mb-1">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i>
+                        <div>Courses</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        </br>Calendar</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-inbox"></i>
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>History</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <div>Studio</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-arrow-right fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Commons</div>
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#">
+                        <span class="fa-stack mb-1">
+                            <i class="fa-regular fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-question fa-stack-1x" style="font-size: 120%;"></i>
+                        </span>
+                        <div>Help</div>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="col-md-2 d-none d-md-block">
@@ -33,12 +89,12 @@
                 <li>
                     <a href="/Kanbas/Courses/Home/screen.html">Home</a>
                 </li>
-                <li class="wd-active">
-                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                <li>
+                    <a href=#>Modules</a>
                 </li>
                 <li><a href="http://piazza.com">Piazza</a></li>
                 <li><a href="#">Zoom</a></li>
-                <li>
+                <li class="wd-active">
                     <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
                 </li>
                 <li><a href="#">Quizzes</a></li>
@@ -196,7 +252,7 @@
         </div>
     </div>
 
-    
+
 </body>
 
 </html>
