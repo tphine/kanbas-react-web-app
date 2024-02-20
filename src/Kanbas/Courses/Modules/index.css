@@ -1,0 +1,75 @@
+.wd-modules,
+.wd-modules * {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-modules {
+    margin: 5px;
+}
+
+.wd-modules>li {
+    background-color: lightgray;
+    border: 1px solid gray !important;
+    border-left: none !important;
+}
+
+.wd-modules>li>div {
+    padding: 6px;
+    border-left: 1px solid gray !important;
+}
+
+.wd-modules>li>ul>li {
+    padding: 5px;
+    border-top: 1px solid gray !important;
+    border-left: 2px solid green;
+}
+
+.wd-modules ul>li>ul>li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    border-top: 1px solid gray !important;
+}
+
+.wd-modules>li {
+    margin-bottom: 20px;
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 2px;
+}
+
+.default-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: gray;
+    color: #424242;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 2px;
+}
+
+.btn {
+    padding: 2px;
+    color: #424242;
+}
+
+.green-btn {
+    color: green;
+}
+
+.centered-va-btn {
+    vertical-align: text-top;
+}
+
+.module-btn {
+    color: white;
+    background-color: red;
+    border-color: red;
+}

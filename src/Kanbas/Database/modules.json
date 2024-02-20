@@ -1,0 +1,116 @@
+[
+    {
+      "_id": "M101",
+      "name": "Introduction to HTML",
+      "description": "Basic principles of HTML.",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L101",
+          "name": "History of HTML",
+          "description": "A brief history of HTML.",
+          "module": "M101"
+        },
+        {
+          "_id": "L102",
+          "name": "HTML Fundamentals",
+          "description": "Basic principles of HTML.",
+          "module": "M101"
+        },
+        {
+          "_id": "L103",
+          "name": "HTML fun facts",
+          "description": "A series of HTML fun facts.",
+          "module": "M101"
+        }
+      ]
+    },
+    {
+      "_id": "M102",
+      "name": "CSS",
+      "description": "Basic principles of CSS.",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L201",
+          "name": "Fundamentals of CSS",
+          "description": "Overview of CSS.",
+          "module": "M102"
+        },
+        {
+          "_id": "L202",
+          "name": "History of CSS",
+          "description": "Brief history of CSS.",
+          "module": "M102"
+        },
+        {
+          "_id": "L203",
+          "name": "CSS fun facts",
+          "description": "Some fun facts about CSS.",
+          "module": "M102"
+        }
+      ]
+    },
+    {
+      "_id": "M103",
+      "name": "JavaScript",
+      "description": "Principles of JavaScript.",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "JavaScript history",
+          "description": "Brief history of JavaScript.",
+          "module": "M103"
+        },
+        {
+          "_id": "L302",
+          "name": "JavaScript fundamentals",
+          "description": "Understanding Javascript.",
+          "module": "M103"
+        },
+        {
+          "_id": "L303",
+          "name": "JavaScript fun facts",
+          "description": "Fun facts about JavaScript.",
+          "module": "M103"
+        }
+      ]
+    },
+    {
+      "_id": "M201",
+      "name": "Fundamentals of Aerodynamics",
+      "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M202",
+      "name": "Subsonic and Supersonic Flow",
+      "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M203",
+      "name": "Aerodynamic Heating",
+      "description": "Study of aerodynamic heating and thermal protection systems.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M301",
+      "name": "Spacecraft Structural Design",
+      "description": "Fundamentals of designing spacecraft structures and materials selection.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M302",
+      "name": "Orbital Mechanics",
+      "description": "Understanding orbital dynamics and mission planning.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M303",
+      "name": "Spacecraft Systems Engineering",
+      "description": "Overview of spacecraft systems and subsystems engineering.",
+      "course": "RS103"
+    }
+  ]

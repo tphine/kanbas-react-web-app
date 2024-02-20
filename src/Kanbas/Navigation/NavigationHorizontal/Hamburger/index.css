@@ -1,0 +1,43 @@
+.hamburger-menu-list-item {
+    list-style: none;
+    width: 100%;
+}
+
+.hamburger-menu-list-item * {
+    text-decoration: none;
+    text-align: left;
+    color: red;
+    font-size: 15px;
+    width: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.hamburger-menu-list-item>a>i {
+    font-size: 15px;
+    width: 30px;
+    color: red;
+}
+
+.hamburger-account-icon {
+    color: gray !important;
+}
+
+.menu-box {
+    border-width: 2px;
+    border-color: gray;
+    border: gray;
+    height: 100vh;
+    background-color: white;
+}
+
+.bm-burger-button {
+    color: white;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.bm-cross {
+    background: black;
+}
