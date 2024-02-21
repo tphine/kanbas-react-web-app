@@ -1,20 +1,24 @@
 import './index.css';
 import HamburgerNav from './Hamburger';
+import DropDownMenu from './DropDown';
+import { useLocation, useParams } from 'react-router-dom';
 
 function NavigationHorizontal() {
+    const { pathname } = useLocation();
+    let pageName = pathname.split("/").at(-1)!;
+    let courseNumber = pathname.split("/").at(-2)!;
     return (
-        <div className="d-md-none">
-            <div className="wd-navbar navbar">
+        <div className="d-md-none" style={{ overflow: "hidden" }}>
+            <div className="wd-navbar navbar flex">
                 <HamburgerNav />
                 <div className="col">
                     <p>
-                        CS4550.30083.202430
-                        <br />Modules
+                        {courseNumber}
+                        <br />
+                        {pageName}
                     </p>
                 </div>
-                <div className="float-end">
-                    Drop Down
-                </div>
+                <DropDownMenu />
             </div >
         </div >
     );

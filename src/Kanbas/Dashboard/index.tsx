@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { courses } from "../Database";
 function Dashboard() {
     return (
-        <div className="p-4 ms-3 col">
+        <div className="p-4 ms-3 col" style={{overflow: "hidden"}}>
             <h1>Dashboard</h1>              <hr />
             <h2>Published Courses (7)</h2> <hr />
             <div className="row">

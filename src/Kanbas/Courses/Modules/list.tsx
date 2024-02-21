@@ -8,8 +8,8 @@ function ModuleList() {
     const modulesList = modules.filter((module) => module.course === courseId);
     const [selectedModule, setSelectedModule] = useState(modulesList[0]);
     return (
-        <div className="col">
-            <div className="right-align">
+        <div className="col" style={{overflow: "hidden"}}>
+            <div className="right-align" style={{overflow: "hidden"}}>
                 <button className="default-btn">Collapse All</button>
                 <button className="default-btn">View Progress</button>
                 <select className="default-btn" id="publish-all">
@@ -17,7 +17,7 @@ function ModuleList() {
                 </select>
                 <button className="default-btn module-btn">+ Module</button>
             </div>
-            <ul className="list-group wd-modules">
+            <ul className="list-group wd-modules" style={{overflow: "hidden"}}>
                 {modulesList.map((module) => (
                     <li
                         className="list-group-item"

@@ -1,0 +1,28 @@
+.wd-drop-down {
+    background-color: white;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    color: white;
+}
+
+.wd-drop-down .list-item {
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.wd-drop-down a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-drop-down>li>a>i {
+    width: 20px;
+}
+
+.bm-burger-button {
+    color: white;
+    margin-left: 10px;
+    font-size: large;
+    width: 20px;
+}

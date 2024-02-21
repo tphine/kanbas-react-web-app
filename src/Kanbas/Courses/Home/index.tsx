@@ -3,7 +3,7 @@ import Status from "./Status";
 
 function Home({pageName}: {pageName: string}) {
   return (
-    <div className="row">
+    <div className="row" style={{overflow: "hidden"}}>
       <ModuleList />
       <Status pageName={pageName}/>
     </div>

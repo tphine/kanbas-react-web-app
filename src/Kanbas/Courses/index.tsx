@@ -4,6 +4,7 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
+import Assignments from "./Assignments";
 import "./index.css";
 
 function Courses() {
@@ -12,7 +13,7 @@ function Courses() {
     const { pathname } = useLocation();
     let pageName = pathname.split("/").at(-1)!;
     return (
-        <div className="p-4 ms-3 col" style={{ width: "100%" }}>
+        <div className="p-4 ms-3 col" style={{ width: "100%", overflow: "hidden" }}>
             <div className="course-title ms-0 d-none d-md-block" style={{ width: "100%" }}>
                 <span style={{ color: 'red' }}><HiMiniBars3 size={28} className="me-3" /> {course?.number} </span>
                 <span style={{ color: 'rgb(70, 70, 70)' }}> {">"} {pageName}</span>
@@ -20,20 +21,19 @@ function Courses() {
             </div>
             <div className="row">
                 <CourseNavigation />
-                <div
-                    className="overflow-y-scroll col" >
+                <div className="overflow-y-scroll col" >
                     <Routes>
-                        <Route path="/" element={<Navigate to="Home" />} />
-                        <Route path="Home" element={<Home pageName={course?.number!}/>}/>
-                        <Route path="Modules" element={<Modules/>} />
+                        <Route path="/" element={<h3>Home</h3>} />
+                        <Route path="Home" element={<Home pageName={course?.number!} />} />
+                        <Route path="Modules" element={<Modules />} />
                         <Route path="Piazza" />
-                        <Route path="Assignments" />
+                        <Route path="Assignments" element={<Assignments />}/>
                         <Route path="Assignments/:assignmentId" />
                         <Route path="Grades" />
                     </Routes>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 }
 export default Courses;

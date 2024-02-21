@@ -4,7 +4,7 @@ import routes from "./routes";
 
 function Kanbas() {
     return (
-        <div className="d-flex">
+        <div className="d-flex" style={{overflow: "hidden"}}>
             <KanbasNavigation />
             <div style={{ width: "100%" }}>
                 <NavigationHorizontal />
