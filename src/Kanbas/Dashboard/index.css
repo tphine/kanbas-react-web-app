@@ -4,3 +4,27 @@
     padding-left: 7px;
     padding-right: 7px;
 }
+
+.btn.delete {
+    float: right;
+    background-color: red;
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.btn.edit {
+    float: right;
+    background-color: blue;
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.btn.update {
+    float: right;
+    background-color: teal;
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+}
