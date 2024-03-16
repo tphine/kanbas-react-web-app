@@ -73,3 +73,55 @@
     background-color: red;
     border-color: red;
 }
+
+.module-input {
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+}
+
+.wd-modules > .new-module {
+    border: 1px solid gray !important;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.wd-modules > .new-module > *{
+    margin: 4px;
+}
+
+.add-btn {
+    padding: 4px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.update-btn {
+    padding: 4px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    padding: 2px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.delete-btn {
+    padding: 2px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
