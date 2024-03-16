@@ -2,34 +2,14 @@ import React, { useState } from "react";
 import './index.css'
 import { Link } from "react-router-dom";
 import { courses } from "../Database";
-function Dashboard() {
-    const [stateCourses, setStateCourses] = useState(courses);
-    const [course, setCourse] = useState({
-        _id: "0", name: "New Course", number: "New Number",
-        startDate: "2023-09-10", endDate: "2023-12-15",
-        image: "/images/reactjs.jpg"
-    });
-    const addNewCourse = () => {
-        const newCourse = {
-            ...course,
-            _id: new Date().getTime().toString()
-        };
-        setStateCourses([...courses, { ...course, ...newCourse }]);
-    };
-    const deleteCourse = (courseId: string) => {
-        setStateCourses(courses.filter((course) => course._id !== courseId));
-    };
-    const updateCourse = () => {
-        setStateCourses(
-            courses.map((c) => {
-                if (c._id === course._id) {
-                    return course;
-                } else {
-                    return c;
-                }
-            })
-        );
-    };
+function Dashboard(
+    { stateCourses, course, setCourse, addNewCourse,
+        deleteCourse, updateCourse }: {
+            stateCourses: any[]; course: any; setCourse: (course: any) => void;
+            addNewCourse: () => void; deleteCourse: (course: any) => void;
+            updateCourse: () => void;
+        }) {
+
 
     return (
         <div className="p-4 ms-3 col" style={{ overflow: "hidden" }}>

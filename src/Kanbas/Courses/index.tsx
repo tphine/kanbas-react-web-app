@@ -7,9 +7,9 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import "./index.css";
 
-function Courses() {
+function Courses({ stateCourses }: { stateCourses: any[]; }) {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
+    const course = stateCourses.find((course) => course._id === courseId);
     const { pathname } = useLocation();
     let pageName = pathname.split("/").at(-1)!;
     return (
